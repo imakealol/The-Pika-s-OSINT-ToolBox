@@ -275,6 +275,10 @@ site:linkedin.com inurl:in “<COMPANY>”
 - 🌐 [osint.sh/analytics](https://osint.sh/analytics/) _\~ reverse google analytics lookup_
 - 🌐 [crt.sh](https://crt.sh/) _\~ certificate analysis_
 - 🌐 [shodan.io](https://www.shodan.io/) (🌐 [fofa.info](https://en.fofa.info/), 🌐 [platform.censys.io](https://platform.censys.io/search)) _\~ host scanner_
+- ⚙️ [CloudRip](https://github.com/moscovium-mc/CloudRip) _\~ ip behind cloudflare by subdomain enum_
+```bash
+python cloudrip.py <SITE> -t 50
+```
 - ⚙️ [wayBackLister](https://github.com/anmolksachan/wayBackLister) _\~ wayback directory bruteforcer_
 
 ```bash
