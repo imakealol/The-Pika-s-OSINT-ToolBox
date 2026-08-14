@@ -394,6 +394,7 @@ https://cavalier.hudsonrock.com/api/json/v2/osint-tools/search-by-ip?ip=<127.0.0
 - 📚️ [Malfrat's OSINT Map](https://map.malfrats.industries/)
 - 📚️ [OSINT Framework](https://osintframework.com/)
 - 📚️ [Cyber Detective's OSINT tools collection](https://cipher387.github.io/osint_stuff_tool_collection/)
+- 📚️ [OSINT Newsletter's tools collection](https://tools.osintnewsletter.com/osint-tools/)
 - 📚️ [Cyber Detective's Dorks-collection-list](https://github.com/cipher387/Dorks-collections-list?tab=readme-ov-file)
 - 📚️ [IntelTechniques Search Tools](https://inteltechniques.com/tools/)
 - 📚️ [Awesome OSINT](https://github.com/jivoi/awesome-osint)
