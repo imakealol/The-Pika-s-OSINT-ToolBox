@@ -150,6 +150,10 @@ https://www.facebook.com/profile.php?id=<PROFILEID>
 - 🌐 [gatecord.com](https://gatecord.com/discord-id-lookup/) _\~ DISCORD lookup_
 - 🌐 [hugonun.github.io](https://hugonun.github.io/discordid2date/) _\~ DISCORD creation time_
 - 🌐 [discord.com](https://discord.com/servers) (🌐 [discord.me](https://discord.me/servers), 🌐 [disboard.org](https://disboard.org/) ) _\~ DISCORD server search_
+- 💉 Telegram Search Dork _\~ TG multi search_
+```bash
+"<QUERY>" site:telegra.ph OR site:telegram.com OR site:nicegram.app OR site:telegram.im OR site:tgstat.* OR site:telemetr.me OR site:telega.in OR site:telega.io OR site:tlgrm.* OR site:tgramsearch.com OR site:telegramchannels.me OR site:tgchannels.org OR site:tglib.net
+```
 - 🌐 [intelx.io](https://intelx.io/tools?tab=telegram) _\~ TG search_
 - 🌐 [tgfind.org](https://tgfind.org/) _\~ TG channel search_
 - 🌐 [telegram-archive-collection](https://web.archive.org/collection-search/telegram) _\~ TG wayback db_
