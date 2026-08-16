@@ -24,6 +24,9 @@ LOGO_IMG=$(echo "$BODY_NO_TITLE" | grep -oP '<img[^>]*src="https://[^"]*postimg\
 # Remove logo and its <p> wrapper from body
 CLEAN_BODY=$(echo "$BODY_NO_TITLE" | perl -0777 -pe 's/<p>\s*<img[^>]*src="https:\/\/[^"]*postimg\.cc\/[^"]*pika[^"]*"[^>]*\/?>\s*<\/p>\s*//s')
 
+# Remove duplicate hr from FlowCharts section
+CLEAN_BODY=$(echo "$CLEAN_BODY" | perl -0777 -pe 's|<hr class="section-divider">\s*<h2([^>]*)>(.*?)</h2>\s*<hr class="section-divider">|<h2\1>\2</h2>|gs')
+
 # Add class="logo" to extracted image
 if [[ -n "$LOGO_IMG" ]]; then
     LOGO_IMG=$(echo "$LOGO_IMG" | sed -E 's/<img/<img class="logo"/; s/\s*\/?>$/>/')
@@ -78,6 +81,8 @@ cat > "$OUTPUT_HTML" <<EOF
         .container { max-width:none; width:85%; }
 		.container > p { max-width: 90%; margin: 1rem auto; }
         h1, h2, h3, h4 { margin-top:2rem; color:#ffca28; text-align:center; }
+	h2 { display:flex; align-items:center; justify-content:center; gap:1.5rem; width:93%; margin:5rem auto 1rem; position:relative; color:#ffca28; }
+	h2::before, h2::after { content:""; flex:1; height:3px; background:#444; }
         h1 { font-size:2.5rem; margin-bottom:0.5rem; }
         img.logo { display:block; margin:1rem auto 2rem; max-width:250px;}
         pre { background:#1e1e1e; border:1px solid #333; border-radius:.5rem; padding:0.5rem 1rem; overflow-x:auto; font-size:.9rem; margin:1.5rem auto; max-width:90%; }
